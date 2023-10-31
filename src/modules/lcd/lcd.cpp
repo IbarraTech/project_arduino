@@ -1,20 +1,280 @@
-#include <Arduino.h>
-#include "LiquidCrystal.h"
-const int rs = 12, en = 11, d4 = 5, d5 = 4, d6 = 3, d7 = 2;
-LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
+#include "lcd.h"
 
-void config()
-{
-    lcd.begin(16, 2);
-    lcd.print("mi config");
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
 }
 
-int a = 0;
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
 
-void count()
-{
-    lcd.setCursor(0, 1);
-    delay(500);
-    lcd.print(a);
-    a++;
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
+}
+#include "lcd.h"
+
+pantalla_lcd::pantalla_lcd(int rs, int en, int d4, int d5, int d6, int d7) : _lcd(rs, en, d4, d5, d6, d7) {}
+
+void pantalla_lcd::iniciar() {
+    _lcd.begin(16, 2);
+    _lcd.setCursor(1, 0);
+    _lcd.print("DISTANCIA (cm)");
+}
+
+void pantalla_lcd::mostrar_distancia(float distancia) {
+    _lcd.setCursor(14, 1);
+    _lcd.print(distancia);
 }
