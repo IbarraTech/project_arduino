@@ -1,16 +1,17 @@
-#ifndef PANTALLA_LCD_H
-#define PANTALLA_LCD_H
+#ifndef SENSOR_H
+#define SENSOR_H
 
 #include <Arduino.h>
-#include <LiquidCrystal.h>
 
-class PantallaLCD {
+class sensor_ultrasonico
+{
 public:
-    PantallaLCD(int rs, int en, int d4, int d5, int d6, int d7);
+    sensor_ultrasonico(int triggerPin, int echoPin);
     void iniciar();
-    void mostrarDistancia(float distancia);
-private:
-    LiquidCrystal _lcd;
-};
+    float medir_distancia();
 
+private:
+    int _triggerPin;
+    int _echoPin;
+};
 #endif
