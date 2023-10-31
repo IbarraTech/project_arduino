@@ -1,4 +1,4 @@
-#include "sensorUltrasónico.h"
+#include "sensor.h"
 
 sensor_ultrasonico::sensor_ultrasonico(int triggerPin, int echoPin) : _triggerPin(triggerPin), _echoPin(echoPin) {}
 
