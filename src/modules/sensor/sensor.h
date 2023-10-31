@@ -14,5 +14,4 @@ private:
     int _triggerPin;
     int _echoPin;
 };
-
 #endif

@@ -6,6 +6,7 @@ void sensor_ultrasonico::iniciar()
 {
     pinMode(_triggerPin, OUTPUT);
     pinMode(_echoPin, INPUT);
+    s
 }
 
 float sensor_ultrasonico::medir_distancia()
