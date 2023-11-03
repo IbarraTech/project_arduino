@@ -1,18 +1,38 @@
-#include "sensor.h"
+#include <Arduino.h>
+#define echo 8
+#define trig 9
+long t, d;
+// #include "LiquidCrystal.h"
+// const int echo=8, trigger=9;
+// LiquidCrystal lcd(rs, en, d4, d5, d6, d7);
 
-sensor_ultrasonico::sensor_ultrasonico(int triggerPin, int echoPin) : _triggerPin(triggerPin), _echoPin(echoPin) {}
-
-void sensor_ultrasonico::iniciar()
+void configuracion()
 {
-    pinMode(_triggerPin, OUTPUT);
-    pinMode(_echoPin, INPUT);
+    pinMode(trig, OUTPUT);
+    pinMode(echo, INPUT);
+    // lcd.begin(16, 2);
+    // lcd.setCursor(6, 0);
+
+    // lcd.setCursor(1, 0);
+    // lcd.print("DISTANCIA (cm)");
+    // lcd.begin(16, 2);
+    // lcd.print("mi config");
 }
 
-float sensor_ultrasonico::medir_distancia()
+// int a = 0;
+
+void distancia()
 {
-    digitalWrite(_triggerPin, HIGH);
+    digitalWrite(trig, HIGH);
     delayMicroseconds(10);
-    digitalWrite(_triggerPin, LOW);
-    long t = pulseIn(_echoPin, HIGH);
-    return t / 58.0; // Calculating distance in centimeters
+    digitalWrite(trig, LOW);
+    t = pulseIn(echo, HIGH);
+    d = t / 58;
+    // lcd.setCursor(14, 1);
+    // lcd.print(d);
+    // delay(500);
+    // lcd.setCursor(0, 1);
+    // delay(500);
+    // lcd.print(a);
+    // a++;
 }
